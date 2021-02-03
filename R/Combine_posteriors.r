@@ -57,7 +57,7 @@ major_groups$Species <- gsub("\\?", "", major_groups$Species)
 allfiles <- list.files(datadir)
 
 # check that files available in the datadir
-if(!length(allfiles) == 5293) stop("Repository POSTERIOR_SAMPLES folder not in datadir")
+#if(!length(allfiles) == 5293) stop("Repository POSTERIOR_SAMPLES folder not in datadir") #ED hashed it out as only using subset
 
 # create a copy but remove brackets from file names as it causes trouble.
 allfiles2 <- sub("\\(", "", allfiles)
